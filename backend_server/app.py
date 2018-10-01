@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-"""The app module, containing the app factory function."""
 from flask import Flask
 from backend_server.extensions import db,ma
 from CRM.contact_resource import crm_contact_api_bp
@@ -18,13 +16,11 @@ def create_app(config_object='backend_server.settings'):
 
 
 def register_extensions(app):
-    """Register Flask extensions."""
     db.init_app(app)
     ma.init_app(ma)
     return None
 
 def register_blueprints(app):
-    """Register Flask blueprints."""
     app.register_blueprint(crm_contact_api_bp)
     app.register_blueprint(crm_company_api_bp)
     return None

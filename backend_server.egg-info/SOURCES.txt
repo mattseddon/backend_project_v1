@@ -1,3 +1,4 @@
+README.md
 backend_server/__init__.py
 backend_server/app.py
 backend_server/data_handler.py

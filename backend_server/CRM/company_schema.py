@@ -15,7 +15,7 @@ class CompanyContactsSchema(Schema):
         #FYI only - the model attribute is provided here only so that get_children can be called from the schema (by request_handler)
         model = CompanyModel
 
-#base for interface to API
+#base for POST requests
 class CompanySchema(Schema):
     class Meta:
         fields = ('id','title','website','contacts')

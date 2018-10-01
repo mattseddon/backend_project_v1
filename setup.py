@@ -8,7 +8,7 @@ setup(
         'flask',
         'flask_sqlalchemy',
         'sqlalchemy',
-        'mysql-connector-python',
+        'pymysql',
         'sqlalchemy-utils',
         'flask-restful',
         'datetime',

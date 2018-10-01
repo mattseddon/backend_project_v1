@@ -1,5 +1,4 @@
-from flask import jsonify
-from backend_server.extensions import ma
+from backend_server.extensions import ma,jsonify
 import re
 
 class MarshalMixin():

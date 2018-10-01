@@ -194,15 +194,12 @@ print "***SUCCESSFUL Company Put***"
 successful_company_puts = [
      '{"title": "Analytx Pty Ltd"}',
      '{"website": "www.analytx.com.au"}'
-     #will successfully change even though extra data is entered and phone is missing
 ]
 show_request_with_response(analytx_url,successful_company_puts,"put")
 
 print "***UNSUCCESSFUL Contact Put***"
 unsuccessful_company_puts = [
       '{"id":"trying to change my id is a bad idea"}'
-     ,'{"company_id":"trying to change my id is a bad idea"}'
-     #will successfully change even though extra data is entered
 ]
 show_request_with_response(analytx_url,unsuccessful_company_puts,"put")
 

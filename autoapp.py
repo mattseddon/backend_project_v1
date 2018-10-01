@@ -1,4 +1,3 @@
-"""Create an application instance."""
 from backend_server.app import create_app
 
 from sqlalchemy_utils import database_exists,create_database

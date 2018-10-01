@@ -20,7 +20,7 @@ class ContactUpdateSchema(Schema):
     class Meta:
         fields = ('first_name','surname','phone','email')
 
-#base for interface to API
+#base for incoming POST requests
 class ContactSchema(Schema):
     class Meta:
         fields = ('id','first_name','surname','companies')

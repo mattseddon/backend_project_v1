@@ -1,4 +1,4 @@
-from extensions import db
+from backend_server.extensions import db
 from datetime import datetime
 
 Column = db.Column
@@ -6,7 +6,6 @@ DateTime = db.DateTime
 
 class CRUDMixin(object):
     __table_args__ = {'extend_existing': True}
-    """Mixin that adds methods for CRUD (create, read, update, delete) operations."""
 
     #create
     def save_in_db(self, commit=True):
