@@ -1,0 +1,1001 @@
+*** Python 2.7.10 (default, May 23 2015, 09:40:32) [MSC v.1500 32 bit (Intel)] on win32. ***
+>>> 
+*** Remote Interpreter Reinitialized  ***
+>>> 
+***SUCCESSFUL Company Posts***
+request: {
+  "website": "www.accelo.com", 
+  "title": "Accelo"
+}
+response: {
+  "contacts": "none entered", 
+  "created": "2018-10-01T06:38:06+00:00", 
+  "id": "accelo", 
+  "status": "company created", 
+  "title": "Accelo", 
+  "updated": null, 
+  "website": "www.accelo.com"
+}
+
+request: {
+  "website": "www.anotherNewcompany.com", 
+  "contacts": [
+    {
+      "phone": "+61411535955", 
+      "first_name": "Matt", 
+      "surname": "Seddon", 
+      "email": "matt.seddon@anotherNewcompany.com"
+    }, 
+    {
+      "phone": "+61411535955", 
+      "first_name": "Dave", 
+      "surname": "Smith", 
+      "email": "dave.smith@anotherNewcompany.com"
+    }
+  ], 
+  "title": "another new company"
+}
+response: {
+  "contacts": [
+    {
+      "created": "2018-10-01T06:38:06+00:00", 
+      "email": "matt.seddon@anotherNewcompany.com", 
+      "first_name": "Matt", 
+      "id": "matt.seddon", 
+      "phone": "+61411535955", 
+      "status": "contact created", 
+      "surname": "Seddon", 
+      "updated": null
+    }, 
+    {
+      "created": "2018-10-01T06:38:06+00:00", 
+      "email": "dave.smith@anotherNewcompany.com", 
+      "first_name": "Dave", 
+      "id": "dave.smith", 
+      "phone": "+61411535955", 
+      "status": "contact created", 
+      "surname": "Smith", 
+      "updated": null
+    }
+  ], 
+  "created": "2018-10-01T06:38:06+00:00", 
+  "id": "another.new.company", 
+  "status": "company created", 
+  "title": "another new company", 
+  "updated": null, 
+  "website": "www.anotherNewcompany.com"
+}
+
+request: {
+  "website": "analytx.com.au", 
+  "contacts": [
+    {
+      "phone": "+61411535955", 
+      "first_name": "Matt", 
+      "surname": "Seddon", 
+      "email": "matt.seddon@analytx.com.au"
+    }, 
+    {
+      "phone": "+61411111111", 
+      "first_name": "Ben", 
+      "surname": "Croll", 
+      "email": "ben.croll@analytx.com.au"
+    }, 
+    {
+      "phone": "+61422222222", 
+      "first_name": "Michael", 
+      "surname": "Esposito", 
+      "email": "michael.esposito@analytx.com.au"
+    }
+  ], 
+  "title": "Analytx"
+}
+response: {
+  "contacts": [
+    {
+      "created": "2018-10-01T06:38:06+00:00", 
+      "email": "matt.seddon@analytx.com.au", 
+      "first_name": "Matt", 
+      "id": "matt.seddon", 
+      "phone": "+61411535955", 
+      "status": "contact is existing and unchanged", 
+      "surname": "Seddon", 
+      "updated": null
+    }, 
+    {
+      "created": "2018-10-01T06:38:06+00:00", 
+      "email": "ben.croll@analytx.com.au", 
+      "first_name": "Ben", 
+      "id": "ben.croll", 
+      "phone": "+61411111111", 
+      "status": "contact created", 
+      "surname": "Croll", 
+      "updated": null
+    }, 
+    {
+      "created": "2018-10-01T06:38:06+00:00", 
+      "email": "michael.esposito@analytx.com.au", 
+      "first_name": "Michael", 
+      "id": "michael.esposito", 
+      "phone": "+61422222222", 
+      "status": "contact created", 
+      "surname": "Esposito", 
+      "updated": null
+    }
+  ], 
+  "created": "2018-10-01T06:38:06+00:00", 
+  "id": "analytx", 
+  "status": "company created", 
+  "title": "Analytx", 
+  "updated": null, 
+  "website": "analytx.com.au"
+}
+
+***PARITALLY SUCCESSFUL Company Posts***
+request: {
+  "website": "www.jackedcontacts.com", 
+  "contacts": [
+    {
+      "phone": "+61411535955", 
+      "surname": "No First Name", 
+      "email": "nofirstname@jackedcontacts.com"
+    }, 
+    {
+      "phone": "+61422222222", 
+      "first_name": "No Surname", 
+      "email": "nosurname@jackedcontacts.com"
+    }, 
+    {
+      "phone": "+61411111111", 
+      "first_name": "Mr", 
+      "surname": "No Email"
+    }, 
+    {
+      "first_name": "Mr", 
+      "surname": "No Phone", 
+      "email": "mrnophone@jackedcontacts.com"
+    }
+  ], 
+  "title": "Jacked Up Contacts"
+}
+response: {
+  "contacts": [
+    {
+      "email": "nofirstname@jackedcontacts.com", 
+      "error": "!!! ERROR - record must contain first_name, record rejected !!!", 
+      "phone": "+61411535955", 
+      "surname": "No First Name"
+    }, 
+    {
+      "email": "nosurname@jackedcontacts.com", 
+      "error": "!!! ERROR - record must contain surname, record rejected !!!", 
+      "first_name": "No Surname", 
+      "phone": "+61422222222"
+    }, 
+    {
+      "error": "!!! ERROR - record must contain email, record rejected !!!", 
+      "first_name": "Mr", 
+      "phone": "+61411111111", 
+      "surname": "No Email"
+    }, 
+    {
+      "email": "mrnophone@jackedcontacts.com", 
+      "error": "!!! ERROR - record must contain phone, record rejected !!!", 
+      "first_name": "Mr", 
+      "surname": "No Phone"
+    }
+  ], 
+  "created": "2018-10-01T06:38:06+00:00", 
+  "id": "jacked.up.contacts", 
+  "status": "company created", 
+  "title": "Jacked Up Contacts", 
+  "updated": null, 
+  "website": "www.jackedcontacts.com"
+}
+
+request: {
+  "website": "www.jackedcontacts.com", 
+  "contacts": [
+    {
+      "phone": "+61333333333", 
+      "first_name": "Mr", 
+      "surname": "No First Name", 
+      "email": "nofirstname@jackedcontacts.com"
+    }, 
+    {
+      "phone": "+61411111111", 
+      "first_name": "Mr", 
+      "surname": "No Email", 
+      "email": "mrnoemail@jackedcontacts.com"
+    }, 
+    {
+      "phone": "+61422222222", 
+      "first_name": "No Surname", 
+      "email": "nosurname@jackedcontacts.com"
+    }, 
+    {
+      "first_name": "Mr", 
+      "surname": "No Phone", 
+      "email": "mrnophone@jackedcontacts.com"
+    }
+  ], 
+  "title": "Jacked Up Contacts"
+}
+response: {
+  "contacts": [
+    {
+      "created": "2018-10-01T06:38:07+00:00", 
+      "email": "nofirstname@jackedcontacts.com", 
+      "first_name": "Mr", 
+      "id": "mr.no.first.name", 
+      "phone": "+61333333333", 
+      "status": "contact created", 
+      "surname": "No First Name", 
+      "updated": null
+    }, 
+    {
+      "created": "2018-10-01T06:38:07+00:00", 
+      "email": "mrnoemail@jackedcontacts.com", 
+      "first_name": "Mr", 
+      "id": "mr.no.email", 
+      "phone": "+61411111111", 
+      "status": "contact created", 
+      "surname": "No Email", 
+      "updated": null
+    }, 
+    {
+      "email": "nosurname@jackedcontacts.com", 
+      "error": "!!! ERROR - record must contain surname, record rejected !!!", 
+      "first_name": "No Surname", 
+      "phone": "+61422222222"
+    }, 
+    {
+      "email": "mrnophone@jackedcontacts.com", 
+      "error": "!!! ERROR - record must contain phone, record rejected !!!", 
+      "first_name": "Mr", 
+      "surname": "No Phone"
+    }
+  ], 
+  "created": "2018-10-01T06:38:06+00:00", 
+  "id": "jacked.up.contacts", 
+  "status": "company is existing and unchanged", 
+  "title": "Jacked Up Contacts", 
+  "updated": null, 
+  "website": "www.jackedcontacts.com"
+}
+
+***UNSUCCESSFUL Company Posts***
+request: {
+  "contacts": [
+    {
+      "phone": "+61444444444", 
+      "first_name": "Dave", 
+      "surname": "Wontload", 
+      "email": "davewontload@jackedcompany.com"
+    }, 
+    {
+      "phone": "+61444444444", 
+      "first_name": "Steve", 
+      "surname": "Wontload", 
+      "email": "mrnophone@jackedcompany.com"
+    }
+  ], 
+  "title": "Jacked Up Company"
+}
+response: {
+  "contacts": [
+    {
+      "email": "davewontload@jackedcompany.com", 
+      "first_name": "Dave", 
+      "phone": "+61444444444", 
+      "surname": "Wontload"
+    }, 
+    {
+      "email": "mrnophone@jackedcompany.com", 
+      "first_name": "Steve", 
+      "phone": "+61444444444", 
+      "surname": "Wontload"
+    }
+  ], 
+  "error": "!!! ERROR - record must contain website, record rejected !!!", 
+  "title": "Jacked Up Company"
+}
+
+request: {
+  "website": "www.jackedcompany.com", 
+  "contacts": [
+    {
+      "phone": "+61444444444", 
+      "first_name": "Dave", 
+      "surname": "Wontload", 
+      "email": "davewontload@jackedcompany.com"
+    }, 
+    {
+      "phone": "+61444444444", 
+      "first_name": "Steve", 
+      "surname": "Wontload", 
+      "email": "mrnophone@jackedcompany.com"
+    }
+  ]
+}
+response: {
+  "contacts": [
+    {
+      "email": "davewontload@jackedcompany.com", 
+      "first_name": "Dave", 
+      "phone": "+61444444444", 
+      "surname": "Wontload"
+    }, 
+    {
+      "email": "mrnophone@jackedcompany.com", 
+      "first_name": "Steve", 
+      "phone": "+61444444444", 
+      "surname": "Wontload"
+    }
+  ], 
+  "error": "!!! ERROR - record must contain title, record rejected !!!", 
+  "website": "www.jackedcompany.com"
+}
+
+***Existing Company Posts - Can add contacts***
+request: {
+  "website": "analytx.com.au", 
+  "contacts": [
+    {
+      "phone": "+61411535955", 
+      "first_name": "Matt", 
+      "surname": "Seddon", 
+      "email": "notmatt.seddon@analytx.com.au"
+    }, 
+    {
+      "phone": "+61411111111", 
+      "first_name": "Ben", 
+      "surname": "Croll", 
+      "email": "notben.croll@analytx.com.au"
+    }, 
+    {
+      "phone": "+61422222222", 
+      "first_name": "Michael", 
+      "surname": "Esposito", 
+      "email": "notmichael.esposito@analytx.com.au"
+    }
+  ], 
+  "title": "Analytx"
+}
+response: {
+  "contacts": [
+    {
+      "created": "2018-10-01T06:38:06+00:00", 
+      "email": "notmatt.seddon@analytx.com.au", 
+      "first_name": "Matt", 
+      "id": "matt.seddon", 
+      "phone": "+61411535955", 
+      "status": "contact is existing and unchanged", 
+      "surname": "Seddon", 
+      "updated": null
+    }, 
+    {
+      "created": "2018-10-01T06:38:06+00:00", 
+      "email": "notben.croll@analytx.com.au", 
+      "first_name": "Ben", 
+      "id": "ben.croll", 
+      "phone": "+61411111111", 
+      "status": "contact is existing and unchanged", 
+      "surname": "Croll", 
+      "updated": null
+    }, 
+    {
+      "created": "2018-10-01T06:38:06+00:00", 
+      "email": "notmichael.esposito@analytx.com.au", 
+      "first_name": "Michael", 
+      "id": "michael.esposito", 
+      "phone": "+61422222222", 
+      "status": "contact is existing and unchanged", 
+      "surname": "Esposito", 
+      "updated": null
+    }
+  ], 
+  "created": "2018-10-01T06:38:06+00:00", 
+  "id": "analytx", 
+  "status": "company is existing and unchanged", 
+  "title": "Analytx", 
+  "updated": null, 
+  "website": "analytx.com.au"
+}
+
+request: {
+  "website": "analytx.com.au", 
+  "contacts": [
+    {
+      "phone": "+61411535955", 
+      "first_name": "Matt", 
+      "surname": "Seddon", 
+      "email": "notmatt.seddon@analytx.com.au"
+    }, 
+    {
+      "phone": "+614999999999", 
+      "first_name": "New", 
+      "surname": "Contact", 
+      "email": "new.contact@analytx.com.au"
+    }
+  ], 
+  "title": "Analytx"
+}
+response: {
+  "contacts": [
+    {
+      "created": "2018-10-01T06:38:06+00:00", 
+      "email": "notmatt.seddon@analytx.com.au", 
+      "first_name": "Matt", 
+      "id": "matt.seddon", 
+      "phone": "+61411535955", 
+      "status": "contact is existing and unchanged", 
+      "surname": "Seddon", 
+      "updated": null
+    }, 
+    {
+      "created": "2018-10-01T06:38:07+00:00", 
+      "email": "new.contact@analytx.com.au", 
+      "first_name": "New", 
+      "id": "new.contact", 
+      "phone": "+614999999999", 
+      "status": "contact created", 
+      "surname": "Contact", 
+      "updated": null
+    }
+  ], 
+  "created": "2018-10-01T06:38:06+00:00", 
+  "id": "analytx", 
+  "status": "company is existing and unchanged", 
+  "title": "Analytx", 
+  "updated": null, 
+  "website": "analytx.com.au"
+}
+
+***SUCCESSFUL Contact Posts***
+request: {
+  "companies": [
+    {
+      "website": "accelo.com", 
+      "phone": "+61455555555", 
+      "email": "mraccelo@crmsales.com", 
+      "title": "CRM & Sales"
+    }, 
+    {
+      "website": "accelo.com", 
+      "phone": "+61455555555", 
+      "email": "mraccelo@finance.com", 
+      "title": "Finance"
+    }, 
+    {
+      "website": "accelo.com", 
+      "phone": "+61455555555", 
+      "email": "mraccelo@time.com", 
+      "title": "Time And Projects"
+    }
+  ], 
+  "first_name": "Mr", 
+  "surname": "Accelo"
+}
+response: {
+  "companies": [
+    {
+      "created": "2018-10-01T06:38:07+00:00", 
+      "email": "mraccelo@crmsales.com", 
+      "id": "crm.sales", 
+      "phone": "+61455555555", 
+      "status": "company created", 
+      "title": "CRM & Sales", 
+      "updated": null, 
+      "website": "accelo.com"
+    }, 
+    {
+      "created": "2018-10-01T06:38:07+00:00", 
+      "email": "mraccelo@finance.com", 
+      "id": "finance", 
+      "phone": "+61455555555", 
+      "status": "company created", 
+      "title": "Finance", 
+      "updated": null, 
+      "website": "accelo.com"
+    }, 
+    {
+      "created": "2018-10-01T06:38:07+00:00", 
+      "email": "mraccelo@time.com", 
+      "id": "time.and.projects", 
+      "phone": "+61455555555", 
+      "status": "company created", 
+      "title": "Time And Projects", 
+      "updated": null, 
+      "website": "accelo.com"
+    }
+  ], 
+  "created": "2018-10-01T06:38:07+00:00", 
+  "first_name": "Mr", 
+  "id": "mr.accelo", 
+  "status": "contact created", 
+  "surname": "Accelo", 
+  "updated": null
+}
+
+***PARTIALLY SUCCESSFUL Contact Posts***
+request: {
+  "companies": [
+    {
+      "website": "smithplumbing.com", 
+      "phone": "+61466666666", 
+      "email": "Steve@smithplumbing.com", 
+      "title": "Smith Plumbing"
+    }, 
+    {
+      "phone": "+61466666666", 
+      "email": "wontload@nowebsite.com", 
+      "title": "No Website"
+    }
+  ], 
+  "first_name": "Steve", 
+  "surname": "Smith"
+}
+response: {
+  "companies": [
+    {
+      "created": "2018-10-01T06:38:07+00:00", 
+      "email": "Steve@smithplumbing.com", 
+      "id": "smith.plumbing", 
+      "phone": "+61466666666", 
+      "status": "company created", 
+      "title": "Smith Plumbing", 
+      "updated": null, 
+      "website": "smithplumbing.com"
+    }, 
+    {
+      "email": "wontload@nowebsite.com", 
+      "error": "!!! ERROR - record must contain website, record rejected !!!", 
+      "phone": "+61466666666", 
+      "title": "No Website"
+    }
+  ], 
+  "created": "2018-10-01T06:38:07+00:00", 
+  "first_name": "Steve", 
+  "id": "steve.smith", 
+  "status": "contact created", 
+  "surname": "Smith", 
+  "updated": null
+}
+
+***UNSUCCESSFUL Contact Posts***
+request: {
+  "first_name": "I SHOULD NOT", 
+  "surname": "BE HERE"
+}
+response: {
+  "companies": "none entered", 
+  "status": "nothing loaded, parent record requires at least one valid child"
+}
+
+request: {
+  "companies": [
+    {
+      "phone": "+61466666666", 
+      "email": "wontload@nowebsite.com", 
+      "title": "No Website"
+    }
+  ], 
+  "first_name": "I SHOULD NOT", 
+  "surname": "BE HERE"
+}
+response: {
+  "companies": [
+    {
+      "email": "wontload@nowebsite.com", 
+      "error": "!!! ERROR - record must contain website, record rejected !!!", 
+      "phone": "+61466666666", 
+      "title": "No Website"
+    }
+  ], 
+  "status": "nothing loaded, parent record requires at least one valid child"
+}
+
+request: {
+  "companies": [
+    {
+      "website": "nophone.com", 
+      "email": "ISHOULDNOTBEHERE@nophone.com", 
+      "title": "No Phone"
+    }
+  ], 
+  "first_name": "I SHOULD NOT", 
+  "surname": "BE HERE"
+}
+response: {
+  "companies": [
+    {
+      "email": "ISHOULDNOTBEHERE@nophone.com", 
+      "error": "!!! ERROR - record must contain phone, record rejected !!!", 
+      "title": "No Phone", 
+      "website": "nophone.com"
+    }
+  ], 
+  "status": "nothing loaded, parent record requires at least one valid child"
+}
+
+***EXISTING Contact Posts***
+request: {
+  "companies": [
+    {
+      "website": "accelo.com", 
+      "phone": "+61455555555", 
+      "email": "IWILLNOTCHANGEmraccelo@crmsales.com", 
+      "title": "CRM & Sales"
+    }, 
+    {
+      "website": "accelo.com", 
+      "phone": "+61455555555", 
+      "email": "IWILLNOTCHANGEmraccelo@finance.com", 
+      "title": "Finance"
+    }, 
+    {
+      "website": "accelo.com", 
+      "phone": "+61455555555", 
+      "email": "mraccelo@purchasing.com", 
+      "title": "Purchasing"
+    }
+  ], 
+  "first_name": "Mr", 
+  "surname": "Accelo"
+}
+response: {
+  "companies": [
+    {
+      "created": "2018-10-01T06:38:07+00:00", 
+      "email": "IWILLNOTCHANGEmraccelo@crmsales.com", 
+      "id": "crm.sales", 
+      "phone": "+61455555555", 
+      "status": "company is existing and unchanged", 
+      "title": "CRM & Sales", 
+      "updated": null, 
+      "website": "accelo.com"
+    }, 
+    {
+      "created": "2018-10-01T06:38:07+00:00", 
+      "email": "IWILLNOTCHANGEmraccelo@finance.com", 
+      "id": "finance", 
+      "phone": "+61455555555", 
+      "status": "company is existing and unchanged", 
+      "title": "Finance", 
+      "updated": null, 
+      "website": "accelo.com"
+    }, 
+    {
+      "created": "2018-10-01T06:38:07+00:00", 
+      "email": "mraccelo@purchasing.com", 
+      "id": "purchasing", 
+      "phone": "+61455555555", 
+      "status": "company created", 
+      "title": "Purchasing", 
+      "updated": null, 
+      "website": "accelo.com"
+    }
+  ], 
+  "created": "2018-10-01T06:38:07+00:00", 
+  "first_name": "Mr", 
+  "id": "mr.accelo", 
+  "status": "contact is existing and unchanged", 
+  "surname": "Accelo", 
+  "updated": null
+}
+
+***SUCCESSFUL Contact Put***
+request: {
+  "first_name": "Matthew"
+}
+response: {
+  "created": "2018-10-01T06:38:06+00:00", 
+  "first_name": "Matthew", 
+  "id": "matt.seddon", 
+  "status": "contact updated", 
+  "surname": "Seddon", 
+  "updated": "2018-10-01T06:38:07+00:00"
+}
+
+request: {
+  "first_name": "Matt", 
+  "book": "bingo bango", 
+  "surname": "Seddon", 
+  "email": "matthew.seddon@analytx.com.au"
+}
+response: {
+  "company_id": "analytx", 
+  "contact_id": "matt.seddon", 
+  "created": "2018-10-01T06:38:06+00:00", 
+  "email": "matthew.seddon@analytx.com.au", 
+  "first_name": "Matt", 
+  "phone": "+61411535955", 
+  "status": "contact_company_link updated", 
+  "surname": "Seddon", 
+  "updated": "2018-10-01T06:38:07+00:00"
+}
+
+***UNSUCCESSFUL Contact Put***
+request: {
+  "id": "trying to change my id is a bad idea"
+}
+response: {
+  "error": "!!! ERROR - record must not contain id, record rejected !!!"
+}
+
+request: {
+  "company_id": "trying to change my id is a bad idea"
+}
+response: {
+  "error": "!!! ERROR - record must not contain company_id, record rejected !!!"
+}
+
+request: {
+  "contact_id": "trying to change my id is a bad idea"
+}
+response: {
+  "error": "!!! ERROR - record must not contain contact_id, record rejected !!!"
+}
+
+***SUCCESSFUL Company Put***
+request: {
+  "title": "Analytx Pty Ltd"
+}
+response: {
+  "created": "2018-10-01T06:38:06+00:00", 
+  "id": "analytx", 
+  "status": "company updated", 
+  "title": "Analytx Pty Ltd", 
+  "updated": "2018-10-01T06:38:07+00:00", 
+  "website": "analytx.com.au"
+}
+
+request: {
+  "website": "www.analytx.com.au"
+}
+response: {
+  "created": "2018-10-01T06:38:06+00:00", 
+  "id": "analytx", 
+  "status": "company updated", 
+  "title": "Analytx Pty Ltd", 
+  "updated": "2018-10-01T06:38:07+00:00", 
+  "website": "www.analytx.com.au"
+}
+
+***UNSUCCESSFUL Contact Put***
+request: {
+  "id": "trying to change my id is a bad idea"
+}
+response: {
+  "error": "!!! ERROR - record must not contain id, record rejected !!!"
+}
+
+request: {
+  "company_id": "trying to change my id is a bad idea"
+}
+response: {
+  "created": "2018-10-01T06:38:06+00:00", 
+  "id": "analytx", 
+  "status": "company is existing and unchanged", 
+  "title": "Analytx Pty Ltd", 
+  "updated": "2018-10-01T06:38:07+00:00", 
+  "website": "www.analytx.com.au"
+}
+
+***GET ME SOME DATA***
+***GET http://127.0.0.1:5000/companies***
+[
+  {
+    "created": "2018-10-01T06:38:06+00:00", 
+    "id": "accelo", 
+    "title": "Accelo", 
+    "updated": null, 
+    "website": "www.accelo.com"
+  }, 
+  {
+    "created": "2018-10-01T06:38:06+00:00", 
+    "id": "analytx", 
+    "title": "Analytx Pty Ltd", 
+    "updated": "2018-10-01T06:38:07+00:00", 
+    "website": "www.analytx.com.au"
+  }, 
+  {
+    "created": "2018-10-01T06:38:06+00:00", 
+    "id": "another.new.company", 
+    "title": "another new company", 
+    "updated": null, 
+    "website": "www.anotherNewcompany.com"
+  }, 
+  {
+    "created": "2018-10-01T06:38:07+00:00", 
+    "id": "crm.sales", 
+    "title": "CRM & Sales", 
+    "updated": null, 
+    "website": "accelo.com"
+  }, 
+  {
+    "created": "2018-10-01T06:38:07+00:00", 
+    "id": "finance", 
+    "title": "Finance", 
+    "updated": null, 
+    "website": "accelo.com"
+  }, 
+  {
+    "created": "2018-10-01T06:38:06+00:00", 
+    "id": "jacked.up.contacts", 
+    "title": "Jacked Up Contacts", 
+    "updated": null, 
+    "website": "www.jackedcontacts.com"
+  }, 
+  {
+    "created": "2018-10-01T06:38:07+00:00", 
+    "id": "purchasing", 
+    "title": "Purchasing", 
+    "updated": null, 
+    "website": "accelo.com"
+  }, 
+  {
+    "created": "2018-10-01T06:38:07+00:00", 
+    "id": "smith.plumbing", 
+    "title": "Smith Plumbing", 
+    "updated": null, 
+    "website": "smithplumbing.com"
+  }, 
+  {
+    "created": "2018-10-01T06:38:07+00:00", 
+    "id": "time.and.projects", 
+    "title": "Time And Projects", 
+    "updated": null, 
+    "website": "accelo.com"
+  }
+]
+
+***GET http://127.0.0.1:5000/company/analytx***
+{
+    "created": "2018-10-01T06:38:06+00:00", 
+    "id": "analytx", 
+    "title": "Analytx Pty Ltd", 
+    "updated": "2018-10-01T06:38:07+00:00", 
+    "website": "www.analytx.com.au"
+}
+
+***GET http://127.0.0.1:5000/company/analytx/contacts***
+[
+  {
+    "created": "2018-10-01T06:38:06+00:00", 
+    "email": "ben.croll@analytx.com.au", 
+    "first_name": "Ben", 
+    "id": "ben.croll", 
+    "phone": "+61411111111", 
+    "surname": "Croll", 
+    "updated": null
+  }, 
+  {
+    "created": "2018-10-01T06:38:06+00:00", 
+    "email": "matthew.seddon@analytx.com.au", 
+    "first_name": "Matt", 
+    "id": "matt.seddon", 
+    "phone": "+61411535955", 
+    "surname": "Seddon", 
+    "updated": "Mon, 01 Oct 2018 06:38:07 GMT"
+  }, 
+  {
+    "created": "2018-10-01T06:38:06+00:00", 
+    "email": "michael.esposito@analytx.com.au", 
+    "first_name": "Michael", 
+    "id": "michael.esposito", 
+    "phone": "+61422222222", 
+    "surname": "Esposito", 
+    "updated": null
+  }, 
+  {
+    "created": "2018-10-01T06:38:07+00:00", 
+    "email": "new.contact@analytx.com.au", 
+    "first_name": "New", 
+    "id": "new.contact", 
+    "phone": "+614999999999", 
+    "surname": "Contact", 
+    "updated": null
+  }
+]
+
+***GET http://127.0.0.1:5000/contacts***
+[
+  {
+    "created": "2018-10-01T06:38:06+00:00", 
+    "first_name": "Ben", 
+    "id": "ben.croll", 
+    "surname": "Croll", 
+    "updated": null
+  }, 
+  {
+    "created": "2018-10-01T06:38:06+00:00", 
+    "first_name": "Dave", 
+    "id": "dave.smith", 
+    "surname": "Smith", 
+    "updated": null
+  }, 
+  {
+    "created": "2018-10-01T06:38:06+00:00", 
+    "first_name": "Matt", 
+    "id": "matt.seddon", 
+    "surname": "Seddon", 
+    "updated": "2018-10-01T06:38:07+00:00"
+  }, 
+  {
+    "created": "2018-10-01T06:38:06+00:00", 
+    "first_name": "Michael", 
+    "id": "michael.esposito", 
+    "surname": "Esposito", 
+    "updated": null
+  }, 
+  {
+    "created": "2018-10-01T06:38:07+00:00", 
+    "first_name": "Mr", 
+    "id": "mr.accelo", 
+    "surname": "Accelo", 
+    "updated": null
+  }, 
+  {
+    "created": "2018-10-01T06:38:07+00:00", 
+    "first_name": "Mr", 
+    "id": "mr.no.email", 
+    "surname": "No Email", 
+    "updated": null
+  }, 
+  {
+    "created": "2018-10-01T06:38:07+00:00", 
+    "first_name": "Mr", 
+    "id": "mr.no.first.name", 
+    "surname": "No First Name", 
+    "updated": null
+  }, 
+  {
+    "created": "2018-10-01T06:38:07+00:00", 
+    "first_name": "New", 
+    "id": "new.contact", 
+    "surname": "Contact", 
+    "updated": null
+  }, 
+  {
+    "created": "2018-10-01T06:38:07+00:00", 
+    "first_name": "Steve", 
+    "id": "steve.smith", 
+    "surname": "Smith", 
+    "updated": null
+  }
+]
+
+***GET http://127.0.0.1:5000/contact/matt.seddon***
+{
+    "created": "2018-10-01T06:38:06+00:00", 
+    "first_name": "Matt", 
+    "id": "matt.seddon", 
+    "surname": "Seddon", 
+    "updated": "2018-10-01T06:38:07+00:00"
+}
+
+***GET http://127.0.0.1:5000/contact/matt.seddon/companies***
+[
+  {
+    "created": "2018-10-01T06:38:06+00:00", 
+    "email": "matthew.seddon@analytx.com.au", 
+    "id": "analytx", 
+    "phone": "+61411535955", 
+    "title": "Analytx Pty Ltd", 
+    "updated": "2018-10-01T06:38:07+00:00", 
+    "website": "www.analytx.com.au"
+  }, 
+  {
+    "created": "2018-10-01T06:38:06+00:00", 
+    "email": "matt.seddon@anotherNewcompany.com", 
+    "id": "another.new.company", 
+    "phone": "+61411535955", 
+    "title": "another new company", 
+    "updated": null, 
+    "website": "www.anotherNewcompany.com"
+  }
+]
+
+>>> 
