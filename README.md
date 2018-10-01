@@ -8,7 +8,7 @@
 * Start MySQL server on [windows](https://dev.mysql.com/doc/refman/8.0/en/windows-start-command-line.html) or [linux / mac](https://coolestguidesontheplanet.com/start-stop-mysql-from-the-command-line-terminal-osx-linux/)
 * [Use pip to install pipenv (pip install pipenv)](https://pypi.org/project/pipenv/)
 * Pull a copy of the project from this repository
-* whilst still in cmd prompt | terminal and the new directory:
+* whilst still in cmd prompt | terminal and the new directory (set or export dependent on environment):
    1. set | export FLASK_APP=autoapp  
    2. set | export FLASK_ENV=development  
    3. set | export FLASK_DEBUG=1 (*only if you would like pretty JSON returned)  
