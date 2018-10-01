@@ -13,6 +13,6 @@
    2. set | export FLASK_ENV=development  
    3. set | export FLASK_DEBUG=1 (*only if you would like pretty JSON returned)  
    4. pipenv install  
-   5. pipenv run flask run  
+   5. pipenv run flask run - a warning will be generated about utf8 as an alias but you shouldn't be concerned.
 * test.py can be run to validate that everything is working
 * expected results are shown in the test_results.txt file in the repository
