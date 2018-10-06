@@ -1,7 +1,7 @@
 from backend_server.extensions import Api, Blueprint, Resource
 from backend_server.request_handler import HandleRequestWith, request
 
-from contact_schema import ContactModelSchema,ContactSchema,ContactCompanyLinkModelSchema,ContactCompaniesSchema,ContactUpdateSchema
+from contact_schema import ContactModelSchema, ContactSchema, ContactCompanyLinkModelSchema, ContactCompaniesSchema, ContactUpdateSchema
 from company_schema import CompanyModelSchema
 
 crm_contact_api_bp = Blueprint('crm_contact_api', __name__)

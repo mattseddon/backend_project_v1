@@ -1,4 +1,4 @@
-from flask import jsonify,request,Response
+from flask import jsonify, request, Response
 from datetime import datetime
 
 class HandleRequestWith():
@@ -6,8 +6,9 @@ class HandleRequestWith():
         self.Interface = InterfaceObject.Interface
 
     def get_one(self,id):
-        return self.Interface.model_schema_to_dump_one.get_one_as_json(id)
-        #)
+        return jsonify(
+            self.Interface.model_schema_to_dump_one.get_one_as_json(id)
+            )
 
     def get_all(self):
         return jsonify(
