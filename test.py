@@ -1,4 +1,4 @@
-import json,requests
+import json, requests
 
 def show_request_with_response(url,requestlist,method):
     for rqst in requestlist:
@@ -197,7 +197,7 @@ successful_company_puts = [
 ]
 show_request_with_response(analytx_url,successful_company_puts,"put")
 
-print "***UNSUCCESSFUL Contact Put***"
+print "***UNSUCCESSFUL Company Put***"
 unsuccessful_company_puts = [
       '{"id":"trying to change my id is a bad idea"}'
 ]
