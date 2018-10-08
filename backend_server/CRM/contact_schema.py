@@ -24,4 +24,4 @@ class ContactUpdateSchema(Schema):
 class ContactSchema(Schema):
     class Meta:
         fields = ('id','first_name','surname','companies')
-        contacts = ma.Nested(ContactCompaniesSchema)
+        companies = ma.Nested(ContactCompaniesSchema)
